@@ -17,6 +17,11 @@ import {
 import {
   MissionControlComponent
 } from "./examples/component-ineraction/parent-to-child-via-service/missioncontrol.component";
+import {ColoredBoxComponent} from "./examples/component-styles/my-colored-box-inline.component";
+import {ParentComponent} from "./examples/component-styles/my-colored-box-in-recomeded/parent.component";
+import {
+  HostSelectorExampleComponent
+} from "./examples/component-styles/special-selector/host-selector-example.component";
 
 const routes: Routes = [
   {path: '', pathMatch: "full", redirectTo:"landing"},
@@ -32,6 +37,9 @@ const routes: Routes = [
   {path: 'countdown-parent-lv', component: CountdownLocalVarParentComponent},
   {path: 'countdown-parent-vc', component: CountdownViewChildParentComponent},
   {path: 'mission-control', component: MissionControlComponent},
+  {path: 'colored-box', component: ColoredBoxComponent},
+  {path: 'app-parent', component: ParentComponent},
+  {path: 'app-main', component: HostSelectorExampleComponent},
 ];
 
 @NgModule({

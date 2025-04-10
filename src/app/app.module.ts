@@ -29,6 +29,12 @@ import {
   MissionControlComponent
 } from "./examples/component-ineraction/parent-to-child-via-service/missioncontrol.component";
 import {AstronautComponent} from "./examples/component-ineraction/parent-to-child-via-service/astronaut.component";
+import {ColoredBoxComponent} from "./examples/component-styles/my-colored-box-inline.component";
+import {ColoredBoxRecComponent} from "./examples/component-styles/my-colored-box-in-recomeded/colored-boxrec.component";
+import {ParentComponent} from "./examples/component-styles/my-colored-box-in-recomeded/parent.component";
+import {
+  HostSelectorExampleComponent
+} from "./examples/component-styles/special-selector/host-selector-example.component";
 
 @NgModule({
   declarations: [
@@ -50,7 +56,11 @@ import {AstronautComponent} from "./examples/component-ineraction/parent-to-chil
     CountdownLocalVarParentComponent,
     CountdownViewChildParentComponent,
     MissionControlComponent,
-    AstronautComponent
+    AstronautComponent,
+    ColoredBoxComponent,
+    ColoredBoxRecComponent,
+    ParentComponent,
+    HostSelectorExampleComponent
   ],
   imports: [
     BrowserModule,
